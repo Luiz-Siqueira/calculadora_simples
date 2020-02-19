@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+<head></head>
+
+<body>
+    <div class="cor-azul">
+    </div>
+
+    <section class="wrapper-calculadora">
+        <form>
+
+            <input type="text" id="resultado" value="0" readonly=“true”>
+
+            <div class="numeros-space">
+                <input class="numeros" onclick="numero(7)" type="button" value="7">
+                <input class="numeros" onclick="numero(8)" type="button" value="8">
+                <input class="numeros" onclick="numero(9)" type="button" value="9">
+
+                <input class="numeros" onclick="numero(4)" type="button" value="4">
+                <input class="numeros" onclick="numero(5)" type="button" value="5">
+                <input class="numeros" onclick="numero(6)" type="button" value="6">
+
+                <input class="numeros" onclick="numero(1)" type="button" value="1">
+                <input class="numeros" onclick="numero(2)" type="button" value="2">
+                <input class="numeros" onclick="numero(3)" type="button" value="3">
+                <input class="wplus" onclick="numero(0)" type="button" value="0">
+                <input class="numeros" onclick="especial(2)" type="button" value=",">
+            </div>
+            <!--numeros-->
+            <div class="operadores-space">
+                <input class="operadores" onclick="especial(1)" type="button" value="C">
+                <input class="operadores" onclick="calcular(1)" type="button" value="+">
+                <input class="operadores" onclick="calcular(2)" type="button" value="-">
+                <input class="operadores" onclick="calcular(3)" type="button" value="X">
+                <input class="operadores" onclick="calcular(4)" type="button" value="÷">
+                <input class="operadores" onclick="calculo()" type="button" value="=">
+            </div>
+            <div class="clear"></div>
+            <!--operadores-space-->
+        </form>
+    </section>
+    <!--wraper-calculadora-->
+
+
+    <script src="function.js"></script>
+</body>
+
+</html>

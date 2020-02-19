@@ -1,0 +1,99 @@
+body{
+    background-color:#222f3e;
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+
+.wplus{
+    width:61%;
+    height:70px;
+    background-color: #222f3e;
+    border:1px solid #ccc;
+    color:white;
+}
+
+.cor-azul{
+    background-color:#3F4045;
+    width:80%;
+    max-width: 600px;
+    height:100px;
+    position: relative;
+    top:95px;
+    margin:0 auto;
+    padding:2%;
+    z-index: 1;
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+section.wrapper-calculadora{
+    width:80%;
+    max-width: 600px;
+    background-color: #C9C0BB;
+    margin:0 auto;
+    padding:2%;
+    -webkit-border-bottom-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+        -webkit-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
+    box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
+}
+.numeros-space{
+    float:left;
+    width:60%;
+    height: 290px;
+}
+.numeros{
+    width:30%;
+    height:73px;
+    background-color: #222f3e;
+    border:1px solid #ccc;
+    color:white;
+    -webkit-box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+}
+
+.operadores-space{
+    float: right;
+    width:40%;
+    height: 290px;
+}
+.operadores{
+    width:100%;
+    height:calc(290px / 6);
+    display: block;
+    background-color: #8AA5A0;
+    border:1px solid #ccc;
+    color:white;
+    font-size:20px;
+    -webkit-box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
+}
+
+#resultado{
+    width:90%;
+    height:60px;
+    margin-bottom:15px;
+    text-align: right;
+    padding:0 30px;
+    font-size:20px;
+    position: relative;
+    bottom:30px;
+    z-index: 10;
+    border:0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
