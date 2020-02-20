@@ -30,7 +30,7 @@ body{
     max-width: 600px;
     height:100px;
     position: relative;
-    top:85px;
+    top:45px;
     margin:0 auto;
     padding:2%;
     z-index: 1;
@@ -50,7 +50,7 @@ section.wrapper-calculadora{
     max-width: 600px;
     background-color: #C9C0BB;
     margin:0 auto;
-    padding:30px 2%;
+    padding:20px 2%;
     -webkit-border-bottom-right-radius: 30px;
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-radius-bottomright: 30px;
@@ -60,6 +60,8 @@ section.wrapper-calculadora{
     -webkit-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
     -moz-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
     box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
+    position: relative;
+    bottom:35px;
 }
 .numeros-space{
     float:left;
@@ -139,6 +141,7 @@ section.wrapper-calculadora{
         height:60px;
         left:1%;
     }
+
 }
 
 @media screen and (max-width: 490px) {
