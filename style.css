@@ -9,7 +9,7 @@ body{
 
 @font-face {
     font-family: "calculator";
-    src: url('Calculator.ttf');
+    src: url('font/Calculator.ttf');
 }
 
 .wplus{
@@ -119,6 +119,7 @@ section.wrapper-calculadora{
     #resultado{
         width:85%;
         height:60px;
+        left:3%;
     }
 }
 
@@ -132,12 +133,19 @@ section.wrapper-calculadora{
         width:56%;
         height:70px;
     }
+
+    #resultado{
+        width:85%;
+        height:60px;
+        left:1%;
+    }
 }
 
 @media screen and (max-width: 490px) {
     #resultado{
         width:80%;
         height:60px;
+        right:3%;
     }
 }
 
@@ -145,6 +153,7 @@ section.wrapper-calculadora{
     #resultado{
         width:73%;
         height:60px;
+        left:3%;
     }
     .operadores{
         width:95%;
