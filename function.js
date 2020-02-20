@@ -1,6 +1,8 @@
 var calculando;
 var n;
 var i = 0;
+var v1 = 0;
+var teste;
 function numero(n) {
     teste = document.getElementById('resultado').value;
     console.log("teste:" + teste);
@@ -31,7 +33,7 @@ function calcular(opearadores) {
         default:
             break;
     }
-
+    v1 = 0;
     i = i + 1;
     if (i == 2) {
         calculo();
@@ -79,10 +81,17 @@ function especial(esp) {
         case 1:
             document.getElementById('resultado').value = 0;
             i = 0;
+            v1 = 0
             break;
         case 2:
-            numero('.')
-            console.log(2.5 + 2.5)
+            if (v1 == 0) {
+                numero('.');
+                console.log(v1);
+                v1 = v1 + 1;
+            } else {
+
+            }
+
             break;
 
         default:
