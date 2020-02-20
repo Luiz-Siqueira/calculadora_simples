@@ -1,9 +1,15 @@
 body{
     background-color:#222f3e;
     height: 100%;
+    margin:0;
 }
 .clear{
     clear: both;
+}
+
+@font-face {
+    font-family: "calculator";
+    src: url('font/Calculator.ttf');
 }
 
 .wplus{
@@ -12,21 +18,19 @@ body{
     background-color: #222f3e;
     border:1px solid #ccc;
     color:white;
-    -webkit-border-top-left-radius: 30px;
-    -webkit-border-top-right-radius: 30px;
-    -moz-border-radius-topleft: 30px;
-    -moz-border-radius-topright: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    -webkit-box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -8px -6px 5px 0px rgba(0,0,0,0.1);
+    
 }
 
-.cor-azul{
+.cor-secundaria{
     background-color:#3F4045;
     width:80%;
     max-width: 600px;
     height:100px;
     position: relative;
-    top:95px;
+    top:85px;
     margin:0 auto;
     padding:2%;
     z-index: 1;
@@ -36,6 +40,9 @@ body{
     -moz-border-radius-topright: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    -webkit-box-shadow: inset 0px -7px 14px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -7px 14px -6px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -7px 14px -6px rgba(0,0,0,0.75);
 }
 
 section.wrapper-calculadora{
@@ -43,14 +50,14 @@ section.wrapper-calculadora{
     max-width: 600px;
     background-color: #C9C0BB;
     margin:0 auto;
-    padding:2%;
+    padding:30px 2%;
     -webkit-border-bottom-right-radius: 30px;
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-radius-bottomright: 30px;
     -moz-border-radius-bottomleft: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-        -webkit-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
     -moz-box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
     box-shadow: 10px 3px 10px 3px rgba(0,0,0,0.1);
 }
@@ -86,6 +93,7 @@ section.wrapper-calculadora{
     -webkit-box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
     box-shadow: inset -8px -6px 9px 0px rgba(0,0,0,0.1);
+    
 }
 
 #resultado{
@@ -94,7 +102,7 @@ section.wrapper-calculadora{
     margin-bottom:15px;
     text-align: right;
     padding:0 30px;
-    font-size:20px;
+    font-size:35px;
     position: relative;
     bottom:30px;
     z-index: 10;
@@ -102,4 +110,60 @@ section.wrapper-calculadora{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    font-family: "calculator";
+}
+
+
+
+@media  screen and (max-width: 750px) {
+    #resultado{
+        width:85%;
+        height:60px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .numeros{
+        width:27%;
+        height:73px;
+    }
+    .wplus{
+        width:56%;
+        height:70px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #resultado{
+        width:80%;
+        height:60px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #resultado{
+        width:73%;
+        height:60px;
+    }
+    .operadores{
+        width:95%;
+        height:37px;   
+    }
+    .numeros{
+        width:30%;
+        height:55px;
+    }
+    .wplus{
+        width:62%;
+        height:55px;
+    }
+
+    section.wrapper-calculadora{
+        width:80%;
+        max-width: 600px;
+        background-color: #C9C0BB;
+        margin:0 auto;
+        padding-bottom: 0px;
+    }
 }
