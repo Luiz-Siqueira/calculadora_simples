@@ -16,8 +16,8 @@ function numero(n) {
     }
 }
 
-function calcular(opearadores) {
-    switch (opearadores) {
+function calcular(operadores) {
+    switch (operadores) {
         case 1:
             operador = ' + ';
             break;
