@@ -2,17 +2,14 @@ var calculando;
 var n;
 var i = 0;
 var v1 = 0;
-var teste;
+var resultado;
 function numero(n) {
     teste = document.getElementById('resultado').value;
-    console.log("teste:" + teste);
     n = n;
-    if (teste != '0') {
+    if (resultado != '0') {
         document.getElementById('resultado').value += n;
-        console.log('dentro!');
     } else {
         document.getElementById('resultado').value = n;
-        console.log('fora!');
     }
 }
 
@@ -39,16 +36,15 @@ function calcular(operadores) {
         calculo();
         i = 1;
     };
-    console.log('i' + i);
+
 
     document.getElementById('resultado').value += operador;
-    console.log(operador)
+
 }
 
 function calculo() {
     calculando = document.getElementById('resultado').value;
     soma = calculando.split(' ');
-    console.log(soma);
     switch (soma[1]) {
         case '+':
             resultado = parseFloat(soma[0]) + parseFloat(soma[2])
@@ -67,10 +63,9 @@ function calculo() {
     }
 
     if (calculando == 0) {
-        ocument.getElementById('resultado').value = 0;
+        document.getElementById('resultado').value = 0;
     } else {
         document.getElementById('resultado').value = resultado;
-        console.log(resultado);
     }
 
 
@@ -86,7 +81,6 @@ function especial(esp) {
         case 2:
             if (v1 == 0) {
                 numero('.');
-                console.log(v1);
                 v1 = v1 + 1;
             } else {
 
